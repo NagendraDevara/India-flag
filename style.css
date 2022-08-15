@@ -1,0 +1,79 @@
+body {
+    overflow-x: hidden;
+    background-color: blueviolet;
+    background-image: url("./images/dalle-e-images/bg-image.jpg");
+    background-size: contain;
+    scroll-behavior: smooth;
+    font-family: 'Comfortaa', cursive;
+
+  }
+
+  .container {
+    width: 100%;
+    height: 100vw;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .square {
+    position: absolute;
+  }
+
+  .square-1 {
+    width: 100px;
+    height: 100px;
+    /* background-image: url("./images/dalle-e-images/ntr_01-preview.png"); */
+    top: 0px;
+    left: -451px;
+  }
+
+  .square-2 {
+    width: 100px;
+    height: 100px;
+    /* background-image: url("./images/dalle-e-images/ram_ch-preview.png"); */
+    top: 0px;
+    right: 0px;
+
+  }
+#final-image{
+  display: none;
+}
+
+@media screen and (max-width: 650px) {
+  body::after{
+    content: "Please visit the website in Desktop";
+
+  }
+  body{
+    background-image: none;
+  }
+  .container{
+    display: none;
+  }
+  #favDialog{
+    display: none;
+  }
+}
+
+#favDialog{
+margin-bottom: 400px;
+border-image-source: linear-gradient(to left, #743ad5, #d53a9d);
+}
+.buttons {
+  background-color: #4CAF50; /* Green */
+  border: none;
+  color: white;
+  padding: 5px 3px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+}
+.cls-btn{
+  text-decoration: underline;
+  border: none;
+  color: blue;
+  margin-right: 5px;
+  background-color: aliceblue;
+}
